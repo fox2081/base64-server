@@ -6,13 +6,11 @@
 </template>
 
 <script>
-import Home from './components/Home'
 import LocationCheck from './components/LocationCheck'
 
 export default {
   name: 'app',
   components: {
-    Home,
     LocationCheck
   }
 }
