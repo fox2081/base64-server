@@ -58,7 +58,7 @@ export default {
               'Content-Type': 'application/x-www-form-urlencoded'
             },
             method: 'post',
-            url: 'http://192.168.137.1:8083/upload',
+            url: 'http://localhost:8083/upload',
             data: formData
           }).then(rs => {
             console.log(rs)

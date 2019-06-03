@@ -23,7 +23,7 @@ app.post('/upload', multipartMiddleware, (req, res) => {
   console.log('接收：', req.body)
   let base64Data = imgData.replace(/^data:image\/\w+;base64,/, '')
   let dataBuffer = new Buffer(base64Data, 'base64')
-  let imgUrl = `upload/image-${date}.png`
+  let imgUrl = `imagesDist/image-${date}.png`
   fs.writeFile(imgUrl, dataBuffer, err => {
     if (err) {
       res.send(err)
